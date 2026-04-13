@@ -15,7 +15,7 @@ jobs:
       run: echo "Hello, world!"
     
     - name: Print branch name
-      run: echo "Current branch: ${{ github.ref }}"
+      run: echo "Current branch: ${{ github.ref_name }}"
 
     - name: Run a multi-line script
       run: |
