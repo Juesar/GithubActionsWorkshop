@@ -13,6 +13,9 @@ jobs:
 
     - name: Run a one-line script
       run: echo "Hello, world!"
+    
+    - name: Print branch name
+      run: echo "Current branch: ${{ github.ref }}"
 
     - name: Run a multi-line script
       run: |
