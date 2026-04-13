@@ -1,0 +1,21 @@
+run-name: Simple Workflow run by ${{ github.actor }}
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Run a one-line script
+      run: echo "Hello, world!"
+
+    - name: Run a multi-line script
+      run: |
+        echo "This is a multi-line script."
+        echo "It can run multiple commands."
+        echo "GitHub Actions makes it easy to automate workflows."
